@@ -1,0 +1,144 @@
+// 主体内容
+$red: #f56c6c;
+.page-container{
+    padding: 15px 30px;
+    .page-breadcrumb{
+        margin-bottom: 20px;
+        .el-breadcrumb__item{
+            font-size: 16px;
+        }
+    }
+    .el-breadcrumb__item.bold:first-child .el-breadcrumb__inner{
+        font-weight: 700;
+        color: #303133;
+    }
+    .el-form.border{
+        border: 1px solid #ccc;
+        padding: 15px 15px 0;
+        margin: 15px 0;
+        .el-form-item{
+            margin-right: 15px;
+            margin-bottom: 15px;
+        }
+        .el-form-item.is-required{
+            margin-bottom: 20px;
+        }
+    }
+    .el-pagination{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .red{
+        color: $red;
+        &.el-button--text {
+            color: #f56c6c;
+            &:hover {
+                color: #f78989;
+            }
+            &:active {
+                color: #dd6161;
+            }
+        }
+    }
+    .flex{
+        display: flex;
+    }
+    .flex-item{
+        flex: 1;
+    }
+    .el-table {
+        & .el-button--text {
+            padding: 0;
+        }
+    }
+    .el-table tr td{
+		.line{
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.line{
+			height: 20px;
+			border-left: 1px solid #333;
+			margin: 0 6px;
+		}
+        .el-button{
+            font-size: 14px;
+            vertical-align: middle;
+        }
+    }
+    .align-left{
+        text-align: left !important;
+    }
+    .img{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    button.outline{
+        color: #29B4F0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+    // .el-col-4 button {
+    //     float: right;
+    // }
+    .el-table {
+        margin: 15px 0;
+    }
+    .el-table thead th,
+    .el-table thead tr {
+        background-color: #e4e7ed;
+        color: #333;
+    }
+    .el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+        border-bottom-color: #e4e7ed;
+        background-color: #e4e7ed;
+        color: #303133;
+    }
+    .secondTab{
+        .el-tabs__active-bar{
+            background-color: #FF9933;
+        }
+        .el-tabs__nav-wrap::after{
+            height: 0;
+        }
+        .tabChild {
+            padding: 0 15px;
+            .el-tabs__item:nth-child(2){
+                padding-left: 0 !important;
+            }
+            .el-tabs__item:last-child{
+                padding-right: 0 !important;
+            }
+        }
+    }
+    table{
+        width: 100%;
+        text-align: center;
+    }
+    .align-right{
+        text-align: right;
+    }
+    .dateForm{
+        margin-right: 0 !important;
+    }
+    .el-dialog .dialogForm .el-form-item__label,
+    .el-dialog .dialogPay .el-form-item__label,
+    .el-dialog .dialogDelivery .el-form-item__label{
+        padding: 0;
+    }
+    .w200 {
+        width: 200px;
+    }
+    // 富文本工具栏
+    .w-e-toolbar{
+        flex-wrap: wrap;
+    }
+    .w-e-text-container{
+        height: 500px !important;
+    }
+    .el-dialog .w-e-text-container{
+        height: 300px !important;
+    }
+}
